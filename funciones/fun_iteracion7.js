@@ -20,6 +20,3 @@ function finderName(param,arg) {
         if (n==param[i]){const x=param.indexOf(param[i])
     if (x!=0){return [true,x]}}}
     if (x==0){return false}}
-
-
-  
