@@ -34,7 +34,7 @@ for (obj of users) {
     for (cat in obj){                                                   
         if (cat=='favoritesSounds'){                                    
             for (t in (users[users.indexOf(obj)][cat])){                
-                lis.push(t)}}}}
+                lis.push(t.toLowerCase())}}}}
 for (sound of lis.sort()){i++;if (sound!=lis[i]){ulis.push(sound);nlis.push(i)}}
 i=-1
 for (e of ulis){i++
