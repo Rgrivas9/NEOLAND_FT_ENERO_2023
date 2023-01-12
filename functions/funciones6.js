@@ -11,7 +11,7 @@ const duplicates = [
     'pasta',
     'soda'
   ];
-  function removeDuplicates(param) {
+/*   function removeDuplicates(param) {
     let i=-1
     for (word of param){
         i++
@@ -21,4 +21,6 @@ const duplicates = [
     for (let word of param){
         i++
         if (param[i]==(param[i+1])){param.splice(i,1)}}
-    return param}
+    return param} */
+const removeDuplicates=(list,i=0,lis=[])=>{for (word of list.sort()){if (word!=list[i+1]){lis.push(word)}}return lis}
+console.log(removeDuplicates(duplicates))
