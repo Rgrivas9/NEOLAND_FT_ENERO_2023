@@ -27,26 +27,3 @@ const car1=new Cars('BMW m&m',50000,60000),car2=new Cars('Chevrolet Corbina',700
 car1.baseGlobalPrice(25000)
 car2.baseGlobalPrice(25000)
 console.log(car1,car2)
-
-/*     class Character {
-        constructor(name, age) {
-          this.name = name;
-          this.age = age;
-        }
-      
-        attack() {
-          return `${this.name} está atacando!`;
-        }
-      
-        defense() {
-          return `${this.name} está defendiéndose!`;
-        }
-      }
-      
-      const Daredevil = new Character("Daredevil", 40);
-      console.log(Daredevil);
-      console.log(Daredevil.attack());
-      
-      const Spiderman = new Character("Spiderman", 25);
-      console.log(Spiderman);
-      console.log(Spiderman.defense()); */
