@@ -1,14 +1,12 @@
 //1.1
 const avengers=["HULK", "SPIDERMAN", "BLACK PANTHER"];
-const valor=avengers[0];
-console.log(valor);
+const showFirst=(list) =>{console.log(list[0])}
 
 //1.2
-avengers[0]="IRONMAN"
+const changeFirst=(list,name)=>{list[0]=name}
 
 //1.3
-for (p of avengers){
-    console.log(p)};
+const showAll=(list)=>{for (p of list){console.log(p)}}
 
 //1.4
 const rickAndMortyCharacters=["Rick", "Beth", "Jerry"];
@@ -23,3 +21,4 @@ console.log(rickAndMortyCharacters2[0],rickAndMortyCharacters2[rickAndMortyChara
 //1.6
 rickAndMortyCharacters2.splice(1,1)
 console.log(rickAndMortyCharacters2)
+
