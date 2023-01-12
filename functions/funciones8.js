@@ -11,6 +11,7 @@ const counterWords = [
     'upgrade',
     'upgrade',
     'upgrade',];
+/*  Este funciona pero es demasiado complicado
 function repeatCounter(param){
   let i=-1
   const lis=[],rlis=[],flis=[]
@@ -33,4 +34,15 @@ function repeatCounter(param){
       flis.push(rlis[i],rlis[i+1])}
     if (isNaN(rlis[i]) && i!=0){
       flis.push(rlis[i],(rlis[i+1]-rlis[i-1]+1))}}  
-  return flis}
+  return flis} 
+  Este funciona pero es demasiado complicado*/ 
+
+const splitWords=(list,lis=[],i=0)=>{for(word of list){i++;if(word!=list[i]){lis.push(word)}}return [lis,list]}
+const countWords=(list,lis=[],i=-1)=>{
+    for(word of list[0]){lis.push(list[1].filter(thing => thing==word))}
+    for(wordlist of lis){i++;lis[i]=[lis[i][0],lis[i].length]}
+    return lis}
+  
+const wichWordRepeat=(list)=>{return countWords(splitWords(list))}
+  
+console.log(wichWordRepeat(counterWords))
