@@ -39,5 +39,4 @@ const countSounds=(list,lis=[],i=-1)=>{
     return lis}
 
 const wichSoundAreFavourite=(list)=>{return countSounds(splitSounds(extractSound(list)))}
-
 console.log(wichSoundAreFavourite(users))
