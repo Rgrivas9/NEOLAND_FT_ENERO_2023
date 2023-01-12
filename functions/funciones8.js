@@ -1,5 +1,4 @@
 const counterWords = [
-    
     'repeat',
     'repeat',
     'enjoy',
@@ -11,8 +10,7 @@ const counterWords = [
     'code',
     'upgrade',
     'upgrade',
-    'upgrade',
-  ];
+    'upgrade',];
 function repeatCounter(param){
   let i=-1
   const lis=[],rlis=[],flis=[]
