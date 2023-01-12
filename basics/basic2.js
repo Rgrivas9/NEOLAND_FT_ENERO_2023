@@ -28,6 +28,7 @@ const users = [
         }
     },
 ];
+//Mejorado en ejercicios extra,jedi-knight,jedik2
 let i=-1,vol=0
 const lis=[]
 for (obj of users) {i++;lis.push(obj.name)
