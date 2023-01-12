@@ -40,3 +40,5 @@ i=-1
 for (e of ulis){i++
     {if (i!=0){list.push(e,nlis[i]-nlis[i-1])}
     else {list.push(e,nlis[i])}}}
+console.log(list)
+//Sé que esto es un caos, lo rehago en los ejercicios extra que hay uno igual en jedik 3
