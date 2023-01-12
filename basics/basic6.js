@@ -7,3 +7,4 @@ function swap(list,text1,text2,i=-1){
         if (i==i1){flis.push(list[i1])}
         else {flis.push(lis[i])}}
     return flis}
+//MEJORADO EN ejercicios extra-jediknight-jedik6
