@@ -1,5 +1,3 @@
-/* 
-7.3 Dado el mismo array, haz la media de las notas de todos los examenes .reduce(). */
 //7.1
 const exams = [
     {name: 'Yuyu Cabeza Crack', score: 5}, 
@@ -20,5 +18,4 @@ const allPassed=exams.reduce(function (acc, exam) {
 console.log(allPassed)
 //7.3
 const averageNotes=exams.reduce((acc, exam) => acc + exam.score, 0) / exams.length;
-
 console.log(averageNotes); 
