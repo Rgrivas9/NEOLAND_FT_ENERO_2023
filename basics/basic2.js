@@ -28,8 +28,6 @@ const users = [
         }
     },
 ];
-//Con esto casi me da un parraque, ya lo pasaré a funciones. 
-//He supuesto que conozco la profundidad, y que existen las claves favouritesSounds al principio y volume al final.
 let i=-1,vol=0
 const lis=[]
 for (obj of users) {i++;lis.push(obj.name)
