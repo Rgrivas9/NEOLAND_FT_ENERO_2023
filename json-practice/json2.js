@@ -14,9 +14,9 @@ const removeAttFrom=(list,list2)=>{for (obj of list){for (att of list2){delete o
 //FALTA TENER EN CUENTA NUMEROS Y MAYUSCULAS Y MINUSCULAS
 const findAnyAndAnything=(list=0,att=0,charList=0,whatAtt=0,lis=[],flis=[])=>{
     
-    if (list==0){return "Introduce: [1] Para ver las instruciones. [2] Para ver más opciones."};
-    if (list==1){return "Introducir 3 parámetros obligatorios: Array con objetos, atributo a buscar, valor o valores(en forma de array) del atributo a buscar. 1 parámetro opcional: Array de atributos del objeto a mostrar(Nada para todos)"};
-    if (list==2){return "Introduce (array,1) para ver una lista con el nombre de los objetos. (array,2) para ver la lista de atributos. (array,3) para ver la longitud."};
+    if (list==0){return "\nIntroduce:\n[1] Para ver las instruciones.\n[2] Para ver más opciones."};
+    if (list==1){return "\nIntroducir 3 parámetros obligatorios:\n\nArray con objetos, atributo a buscar, valor o valores(en forma de array) del atributo a buscar.\n\n1 parámetro opcional:\n\nArray de atributos del objeto a mostrar(No introducir nada para mostrar todos)"};
+    if (list==2){return "\nIntroduce (array,1) para ver una lista con el nombre de los objetos.\n\n(array,2) para ver la lista de atributos.\n\n(array,3) para ver la longitud."};
     if (att==1){return listCharNames(list)};
     if (att==2){return attLabels(list)};
     if (att==3){return list.length};
@@ -24,5 +24,5 @@ const findAnyAndAnything=(list=0,att=0,charList=0,whatAtt=0,lis=[],flis=[])=>{
     if (whatAtt==0){return findObjects(charList,lis,list,att)}; 
     if (typeof(whatAtt)=='string'){whatAtt=[whatAtt]};
     if (whatAtt!=0){return removeAttFrom(findObjects(charList,lis,list,att),removeAtt(whatAtt,attLabels(list)))}}
-    
+
 console.log(findAnyAndAnything(chars,'name',['beth','jerry'],['name','id']))
