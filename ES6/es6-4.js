@@ -14,5 +14,5 @@ const cities=[{isVisited:true, name: 'Tokyo'},
 	          {isVisited:false, name: 'Madagascar'},
 	          {isVisited:true, name: 'Amsterdam'}, 
 	          {isVisited:false, name: 'Seul'}];
-const visitedCities=cities.map(citie => citie.isVisited==true ? citie=citie.name.concat(' Visitado') : citie=citie.name)
+const visitedCities=cities.map(city => city.isVisited ? city.name.concat(' Visitado') : city.name)
 console.log(visitedCities)
