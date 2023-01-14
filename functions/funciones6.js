@@ -1,6 +1,11 @@
 const duplicates = [
     'sushi',
     'pizza',
+    'pizza',
+    'pizza',
+    'pizza',
+    'pizza',
+    'pizza',
     'burger',
     'potatoe',
     'pasta',
@@ -22,5 +27,5 @@ const duplicates = [
         i++
         if (param[i]==(param[i+1])){param.splice(i,1)}}
     return param} */
-const removeDuplicates=(list,i=0,lis=[])=>{for (word of list.sort()){if (word!=list[i+1]){lis.push(word)}}return lis}
+const removeDuplicates=(list,i=-1,lis=[])=>{for (word of list.sort()){i++;if (word!=list[i+1]){lis.push(word)}}return lis}
 console.log(removeDuplicates(duplicates))
