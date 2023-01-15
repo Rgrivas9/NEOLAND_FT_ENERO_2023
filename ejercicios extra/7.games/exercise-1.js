@@ -161,6 +161,7 @@ const winner=()=>{
     <button id="reset" onclick="reset()">Try again</button>`}}
 const music = new Audio('kungfury.mp3')
 const unmute=()=>{music.play();
+  music.loop=true
   sound.innerHTML='<button onclick="mute()">mute</button>'}
 
 const mute=()=>{music.pause()
