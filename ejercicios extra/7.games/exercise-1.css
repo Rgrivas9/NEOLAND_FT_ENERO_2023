@@ -9,14 +9,12 @@ div.score {
   border: 5px solid #966805;
   border-radius: 10px;
   background-color: rgb(55, 5, 88);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: x-large;
   padding-left: 30px;
   color: rgb(0, 0, 0);
   letter-spacing: 2px;
   -webkit-text-stroke: 1px #966805;
-  
-  
 }
 img {
   width: 150px;
