@@ -76,6 +76,7 @@ const row1 = document.querySelector("#row1");
 const row2 = document.querySelector("#row2");
 const row3 = document.querySelector("#row3");
 const score = document.querySelector("#s");
+const sound = document.querySelector("#sound")
 
 const printInDocument = (list, i = 0) => {
   for (const item of list) {
@@ -157,4 +158,9 @@ const winner=()=>{
     if (s==6){    score.innerHTML =`
     <h1> Congratulations! You win! <h1>
     <button id="reset" onclick="reset()">Try again</button>`}}
+const music = new Audio('kungfury.mp3')
+const unmute=()=>{music.play();
+  sound.innerHTML='<button onclick="mute()">mute</button>'}
 
+const mute=()=>{music.pause()
+  sound.innerHTML='<button onclick="unmute()">sound</button>'}
