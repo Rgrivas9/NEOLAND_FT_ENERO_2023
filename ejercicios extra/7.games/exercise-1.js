@@ -1,4 +1,4 @@
-const cardArray = [
+const cards = [
   {
     id: 1,
     name: "earth",
@@ -60,6 +60,17 @@ const cardArray = [
     img: "public/exercise-1/uranus.svg",
   },
 ];
+const getRandomInt=(max)=>{return Math.floor((Math.random() * max))}
+const getRandomRange=(max,range=[])=>{
+    while (range.length<max){
+        r=getRandomInt(max)
+        if (range.indexOf(r)===-1){range.push(r)}}
+    return range}
+const getRandomArray=(list,rList=[])=>{
+  for (n of getRandomRange(list.length)){
+      rList.push(list[n])}
+  return rList}
+const cardArray = getRandomArray(cards)
 //
 const row1 = document.querySelector("#row1");
 const row2 = document.querySelector("#row2");
@@ -109,7 +120,7 @@ const reset=()=>{s=0;a=0;lis.splice(0,2);idLis.splice(0,2);row1.innerHTML="";row
     score.innerHTML =`
 <h3>Score:<span data-function="scored">0</span></h3>
 <h3>Attempts:<span data-function="attempted">0</span></h3>
-<button id="start" onclick="start(cardArray)">start </button>`;
+<button id="start" onclick="start(cardArray)">start </button><button id="random" onclick="window.location.reload();">random </button>`;
 printInDocument(cardArray)}
 
 const start=(list, i = 0)=> {row1.innerHTML="";row2.innerHTML="";row3.innerHTML="";
@@ -146,3 +157,4 @@ const winner=()=>{
     if (s==6){    score.innerHTML =`
     <h1> Congratulations! You win! <h1>
     <button id="reset" onclick="reset()">Try again</button>`}}
+
